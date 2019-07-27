@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
@@ -7,25 +7,35 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [homeScore, setHomeScore] = useState(32); 
   const [awayScore, setAwayScore] = useState(32);
-  let [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(30);
   
   
 // const newTimer = () => {
 //     return timer.map( setTimer(timer - 1) = () => { if(newTimer <timer) ? (timer - 1)})
 //   };
 
- const newTimer = () => { 
+// timer.map( () => { 
+  
+//   const newTimer = setTimer(timer - 1); 
+//   return newTimer
+//   } 
+  
+// );
 
-  if (timer === 0 && setTimer(timer + 1) > 0) {
-    timer = setInterval(setTimer, 1000)
-    return newTimer + 1;
-  };
+// let  [newTimer, setNewTimer] = useEffect(0)
+
+//  const newTimer = () => { 
+
+//   if (timer === 0 && setTimer(timer + 1) > 0) {
+//     timer = setInterval(setTimer, 1000)
+//     return newTimer + 1;
+//   };
 
   
 
   // console.log(newTimer);
   
-};
+// };
 
 
 
@@ -60,7 +70,7 @@ function App() {
           <button onClick={() => [setAwayScore(awayScore + 3)]} className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
         <div className="cdTimer">
-          <button onClick={newTimer} className="buttons">Countdown Timer</button>
+          <button onClick={ () => [setTimer(timer - 1)]} className="buttons">Countdown Timer</button>
           </div>
       </section>
     </div>
