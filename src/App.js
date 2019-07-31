@@ -24,18 +24,18 @@ function App() {
 
 // let  [newTimer, setNewTimer] = useEffect(0)
 
-//  const newTimer = () => { 
+ const newTimer = () => { 
 
-//   if (timer === 0 && setTimer(timer + 1) > 0) {
-//     timer = setInterval(setTimer, 1000)
-//     return newTimer + 1;
-//   };
+  if (timer === 0 && setTimer(timer + 1) > 0) {
+    timer = setInterval(setTimer, 1000)
+    return newTimer + 1;
+  };
 
   
 
-  // console.log(newTimer);
+  console.log(newTimer);
   
-// };
+};
 
 
 
